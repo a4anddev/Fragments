@@ -1,15 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:id="@+id/rel"
+
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <FrameLayout
-        android:id="@+id/frameid"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
 
-</RelativeLayout>
+     <Button
+         android:onClick="addFragA"
+         android:text="add f A"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" />
+     <Button
+         android:onClick="removeFragA"
+         android:text="rm f A"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" />
+
+
+     <Button
+         android:onClick="addFragB"
+         android:text="add f b"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" />
+     <Button
+         android:onClick="removeFragB"
+         android:text="rm f b"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" />
+
+
+
+
+ </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></FrameLayout>
+
+
+
+
+</LinearLayout>

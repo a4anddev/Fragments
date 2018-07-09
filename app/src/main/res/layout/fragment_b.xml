@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
-    android:background="#ff3"
+    android:background="#5192cf"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
 
     <TextView
+
+        android:textColor="@android:color/white"
         android:textSize="30dp"
         android:textAlignment="center"
-        android:text="From A Fragment"
+        android:text="From B Fragment "
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 </LinearLayout>
