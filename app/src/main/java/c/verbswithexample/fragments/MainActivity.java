@@ -80,4 +80,48 @@ public class MainActivity extends AppCompatActivity {
         transaction.commit();
 
     }
+
+    public void attachFragA(View view) {
+
+        FragmentA fragmentA = (FragmentA) manager.findFragmentByTag("fragA");
+
+        FragmentTransaction transaction = manager.beginTransaction();
+
+        if (fragmentA != null){
+
+            transaction.attach(fragmentA);
+            transaction.commit();
+
+        }else{
+
+            Toast.makeText(this, "not found fragment a", Toast.LENGTH_SHORT).show();
+
+        }
+
+
+    }
+
+    public void detachFraga(View view) {
+
+        FragmentA fragmentA = (FragmentA) manager.findFragmentByTag("fragA");
+
+        FragmentTransaction transaction = manager.beginTransaction();
+
+        if (fragmentA != null){
+
+            transaction.detach(fragmentA);
+            transaction.commit();
+
+        }else{
+
+            Toast.makeText(this, "not found fragment a", Toast.LENGTH_SHORT).show();
+
+        }
+    }
+
+    public void hideFragA(View view) {
+    }
+
+    public void showFraga(View view) {
+    }
 }

@@ -56,12 +56,39 @@
             android:layout_height="wrap_content" />
 
 
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:onClick="attachFragA"
+            android:text="Attach f A"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:onClick="detachFraga"
+            android:text="Detach f A"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
 
 
 
+        <Button
+            android:onClick="hideFragA"
+            android:text="Hide f A"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:onClick="showFraga"
+            android:text="Show f A"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
 
 
     </LinearLayout>
+
 
     <FrameLayout
         android:id="@+id/container"
