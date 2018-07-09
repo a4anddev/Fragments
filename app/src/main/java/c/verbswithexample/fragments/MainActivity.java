@@ -6,6 +6,7 @@ import android.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -30,6 +31,15 @@ public class MainActivity extends AppCompatActivity {
 
     public void removeFragA(View view) {
 
+        FragmentA fragmentA = (FragmentA) manager.findFragmentByTag("fragA");
+
+        if (fragmentA != null) {
+            FragmentTransaction transaction = manager.beginTransaction();
+            transaction.remove(fragmentA);
+            transaction.commit();
+        }else {
+            Toast.makeText(this, "Frangment A not found", Toast.LENGTH_SHORT).show();
+        }
 
     }
 
@@ -38,12 +48,20 @@ public class MainActivity extends AppCompatActivity {
         FragmentB fragmentB = new FragmentB();
 
         FragmentTransaction transaction = manager.beginTransaction();
-        transaction.add(R.id.container, fragmentB, "fragA");
+        transaction.add(R.id.container, fragmentB, "fragB");
         transaction.commit();
     }
 
     public void removeFragB(View view) {
+        FragmentB fragmentB = (FragmentB) manager.findFragmentByTag("fragB");
 
+        if (fragmentB != null) {
+            FragmentTransaction transaction = manager.beginTransaction();
+            transaction.remove(fragmentB);
+            transaction.commit();
+        }else {
+            Toast.makeText(this, "Fragment B not found", Toast.LENGTH_SHORT).show();
+        }
 
     }
 }
