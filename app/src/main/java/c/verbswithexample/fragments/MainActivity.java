@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
         FragmentA fragmentA = new FragmentA();
 
         fragmentA.setRohaData(firstNo, secondNo);
+        fragmentA.setRohanClassData(new Employee());
 
 
         FragmentTransaction transaction = manager.beginTransaction();
@@ -43,4 +44,12 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+
+    public class Employee{
+
+        String firstPerson = "rohan Dhiman", secondPerson = "nisha Dhiman";
+
+    }
+
+
 }
