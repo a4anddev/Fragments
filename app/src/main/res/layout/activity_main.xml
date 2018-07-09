@@ -9,35 +9,16 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
- <LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
 
-   <EditText
-       android:inputType="number"
-       android:id="@+id/edfirst"
-       android:hint="First No"
-       android:layout_weight="1"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content" />
-
-     <EditText
-         android:inputType="number"
-         android:id="@+id/edsecond"
-         android:hint="Second No"
-         android:layout_weight="1"
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tresult"
+        android:textSize="30dp"
+        android:layout_gravity="center"
+        android:text="Result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
 
-
-</LinearLayout>
-
-   <Button
-       android:onClick="sendAtoFragA"
-       android:text="Send to fragment a"
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content" />
 
 
     <FrameLayout
