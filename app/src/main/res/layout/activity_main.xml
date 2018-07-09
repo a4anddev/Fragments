@@ -9,36 +9,59 @@
     tools:context=".MainActivity">
 
  <LinearLayout
-     android:layout_width="match_parent"
-     android:layout_height="wrap_content">
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
 
-     <Button
-         android:onClick="addFragA"
-         android:text="add f A"
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content" />
-     <Button
-         android:onClick="removeFragA"
-         android:text="rm f A"
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content" />
-
-
-     <Button
-         android:onClick="addFragB"
-         android:text="add f b"
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content" />
-     <Button
-         android:onClick="removeFragB"
-         android:text="rm f b"
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content" />
+    <Button
+        android:onClick="addFragA"
+        android:text="add f A"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:onClick="removeFragA"
+        android:text="rm f A"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
 
+    <Button
+        android:onClick="addFragB"
+        android:text="add f b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:onClick="removeFragB"
+        android:text="rm f b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
 
- </LinearLayout>
+
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:onClick="replaceFragA"
+            android:text="Replace f into A"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:onClick="replaceFragB"
+            android:text="Replace f into B"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+
+
+
+
+    </LinearLayout>
 
     <FrameLayout
         android:id="@+id/container"

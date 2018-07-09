@@ -64,4 +64,20 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
+
+    public void replaceFragA(View view) {
+        FragmentA fragmentA = new FragmentA();
+        FragmentTransaction transaction = manager.beginTransaction();
+        transaction.replace(R.id.container, fragmentA, "fragA");
+        transaction.commit();
+
+    }
+
+    public void replaceFragB(View view) {
+        FragmentB fragmentB = new FragmentB();
+        FragmentTransaction transaction = manager.beginTransaction();
+        transaction.replace(R.id.container, fragmentB, "fragB");
+        transaction.commit();
+
+    }
 }
