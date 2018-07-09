@@ -13,6 +13,7 @@ public class FragmentA extends Fragment{
 
     private Button btnAdd;
     private TextView tresult;
+    private int firstNo = 0, secondNo = 0;
 
     @Nullable
     @Override
@@ -22,15 +23,12 @@ public class FragmentA extends Fragment{
         btnAdd = view.findViewById(R.id.btnAdd);
         tresult = view.findViewById(R.id.tresult);
 
-        Bundle bundle = getArguments();
-        final int first = bundle.getInt(Constants.FRIST_NUM, 0);
-        final int second = bundle.getInt(Constants.SECOND_NUM, 0);
-
         btnAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                addTwoNum(first, second);
+                addTwoNo(firstNo, secondNo);
+
             }
         });
 
@@ -38,13 +36,19 @@ public class FragmentA extends Fragment{
 
     }
 
-    private void addTwoNum(int first, int second) {
+    private void addTwoNo(int firstNo, int secondNo) {
 
-        int result = first + second;
+        int result = firstNo + secondNo;
         tresult.setText("Result : " + result);
-
 
     }
 
 
+    public void setRohaData(int firstNo, int secondNo) {
+
+         this.firstNo = firstNo;
+         this.secondNo = secondNo;
+
+
+    }
 }

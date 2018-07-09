@@ -31,14 +31,9 @@ public class MainActivity extends AppCompatActivity {
         int firstNo = Integer.valueOf(first.getText().toString());
         int secondNo = Integer.valueOf(second.getText().toString());
 
-        Bundle bundle = new Bundle();
-
-        bundle.putInt(Constants.FRIST_NUM, firstNo);
-        bundle.putInt(Constants.SECOND_NUM, secondNo);
-
         FragmentA fragmentA = new FragmentA();
 
-        fragmentA.setArguments(bundle);
+        fragmentA.setRohaData(firstNo, secondNo);
 
 
         FragmentTransaction transaction = manager.beginTransaction();
