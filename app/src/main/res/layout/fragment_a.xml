@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
+    android:orientation="vertical"
+    android:padding="10dp"
     android:background="#ff3"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
@@ -7,9 +9,22 @@
 
 
     <TextView
-        android:textSize="30dp"
-        android:textAlignment="center"
-        android:text="From A Fragment"
+        android:text="Fragment A"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:text="Add two number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tresult"
+        android:textSize="30dp"
+        android:layout_gravity="center"
+        android:text="Result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
 </LinearLayout>
