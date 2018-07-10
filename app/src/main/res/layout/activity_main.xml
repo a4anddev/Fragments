@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
+
     android:layout_margin="10dp"
     android:orientation="vertical"
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -9,23 +10,25 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
-    <TextView
-        android:id="@+id/tresult"
-        android:textSize="30dp"
-        android:layout_gravity="center"
-        android:text="Result"
-        android:layout_width="wrap_content"
+    <FrameLayout
+        android:layout_weight="1"
+        android:layout_margin="10dp"
+        android:id="@+id/fragContainerA"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-
-
+<Button
+    android:onClick="sendDataFragmentB"
+    android:text="send data fragment b"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
 
     <FrameLayout
+        android:layout_weight="1"
         android:layout_margin="10dp"
-        android:id="@+id/container"
+        android:id="@+id/fragContainerB"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"></FrameLayout>
+        android:layout_height="wrap_content" />
 
 
 
